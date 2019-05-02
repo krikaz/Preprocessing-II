@@ -168,14 +168,14 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: normal;
   margin: 2rem auto;
 }
-nav ul {
+.nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -247,4 +247,7 @@ nav ul {
 .main-header {
   border-top: 0.25rem dashed #C0C0C0;
   border-bottom: 0.25rem dashed #C0C0C0;
+}
+.main-header section {
+  margin: 2rem auto;
 }
