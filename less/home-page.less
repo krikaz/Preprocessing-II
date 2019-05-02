@@ -2,9 +2,8 @@
 
   .content-section {
     margin: 30px 0;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    .flexbox(row, space-between, normal);
 
    
     
@@ -25,7 +24,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @main-border;
 
     .text-content {
       padding-left: 1%;
@@ -49,9 +48,8 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    border-top: @main-border;
+    .flexbox(row, space-between, normal);
 
     .destination {
       width: 30%;
@@ -59,3 +57,9 @@
     }
   }
 }// home
+
+.main-header {
+  border-top: @main-border;
+  border-bottom: @main-border;
+}
+
