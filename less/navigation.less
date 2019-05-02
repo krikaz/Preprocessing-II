@@ -2,10 +2,6 @@
   .flexbox(row, space-between, normal);
   margin: @extraLarge auto;
 
-  @media @mobile {
-    .flexbox(column, space-around, center);
-  }
-
   ul {
     .flexbox(row, space-around, center);
     width: 50%;
@@ -14,5 +10,9 @@
     @media @mobile {
       width: 100%;
     }
+  }
+
+  @media @mobile {
+    .flexbox(column, space-around, center);
   }
 }
