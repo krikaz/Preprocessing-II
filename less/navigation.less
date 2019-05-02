@@ -2,9 +2,17 @@
   .flexbox(row, space-between, normal);
   margin: @extraLarge auto;
 
+  @media @mobile {
+    .flexbox(column, space-around, center);
+  }
+
   ul {
     .flexbox(row, space-around, center);
     width: 50%;
     font-size: @large;
+
+    @media @mobile {
+      width: 100%;
+    }
   }
 }

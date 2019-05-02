@@ -175,6 +175,14 @@ img {
   align-items: normal;
   margin: 2rem auto;
 }
+@media (max-width: 500px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .nav ul {
   display: flex;
   flex-direction: row;
@@ -182,6 +190,11 @@ img {
   align-items: center;
   width: 50%;
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .nav ul {
+    width: 100%;
+  }
 }
 .footer {
   width: 100%;
@@ -202,13 +215,33 @@ img {
   justify-content: space-between;
   align-items: normal;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 90%;
+    margin: 0 auto ;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 90%;
+    margin: 0 auto ;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -216,6 +249,14 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 0.25rem dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: normal;
+    align-items: normal;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -229,6 +270,12 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 90%;
+    margin: 0 auto ;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -240,9 +287,22 @@ img {
   justify-content: space-between;
   align-items: normal;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+  }
 }
 .home .content-pick .destination .btn {
   background-color: #17A2B8;
@@ -255,6 +315,12 @@ img {
 .main-header {
   border-top: 0.25rem dashed #C0C0C0;
   border-bottom: 0.25rem dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .main-header {
+    width: 90%;
+    margin: 0 auto ;
+  }
 }
 .main-header section {
   margin: 2rem auto;
