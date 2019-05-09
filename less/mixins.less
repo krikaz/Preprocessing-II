@@ -1,1 +1,15 @@
-// Mixins in here
+.flexbox(@direction, @just-cont, @alig-it) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @just-cont;
+  align-items: @alig-it;
+}
+
+.create-button(@back-color, @color) {
+  background-color: @back-color;
+  color: @color;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5%;
+  border-radius: 15px;
+}

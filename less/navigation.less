@@ -1,1 +1,18 @@
-// Navigation Styles here
+.nav {
+  .flexbox(row, space-between, normal);
+  margin: @extraLarge auto;
+
+  ul {
+    .flexbox(row, space-around, center);
+    width: 50%;
+    font-size: @large;
+
+    @media @mobile {
+      width: 100%;
+    }
+  }
+
+  @media @mobile {
+    .flexbox(column, space-around, center);
+  }
+}
